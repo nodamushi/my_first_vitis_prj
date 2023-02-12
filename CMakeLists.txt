@@ -45,3 +45,13 @@ add_vivado_project(
   BOARD      digilentinc.com:cora-z7-07s:part0:1.0 # Cora Z7-07S を使用
   BOARD_REPO ${xilinxboardstore_SOURCE_DIR}        # ↑でダウンロードした XilinXBoardStoreへのパスを追加
 )
+
+############################
+# Vitis のプロジェクトを追加
+############################
+add_vitis_hw_project(
+  sample_app                       # プロジェクト名
+  XSA  sample_design               # Vivado プロジェクトを指定
+  PROC 知らんがな。馬鹿にすんな。  # 知らんがな
+  SOURCES src                      # ソースコードディレクトリ
+)
