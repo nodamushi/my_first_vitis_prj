@@ -52,6 +52,6 @@ add_vivado_project(
 add_vitis_hw_project(
   sample_app                       # プロジェクト名
   XSA  sample_design               # Vivado プロジェクトを指定
-  PROC 知らんがな。馬鹿にすんな。  # 知らんがな
+  PROC ps7_cortexa9_0              # Processor
   SOURCES src                      # ソースコードディレクトリ
 )
